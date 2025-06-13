@@ -1,0 +1,100 @@
+.ProjectCard {
+    padding: 3px;
+    // padding-top: 5px;
+    // color: rgb(249, 249, 249) !important;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 20px;
+    min-height: 300px;
+    width: 365px;
+    margin: 5px;
+    cursor: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.589) 0px 8px 16px -8px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s;
+    // background: #000;
+
+    >.imgDiv {
+        width: 358px;
+        height: 300px;
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+
+        >img {
+            // height: 300px;
+            width: 358px;
+            height: 300px;
+            // object-fit: cover;
+            transition: all 0.3s;
+
+            // aspect-ratio: 16/10;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    >h2 {
+        color: black;
+        text-align: center;
+        margin-block: 15px;
+        text-transform: none;
+    }
+
+    >p {
+        color: black;
+        text-align: center;
+        padding-inline: 10px;
+        padding-bottom: 10px;
+        text-transform: none;
+    }
+
+    >.stack {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, min(40px));
+        grid-template-rows: auto;
+        justify-content: flex-start;
+        gap: 20px;
+        padding: 20px;
+
+        >img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            transition: all 0.3s;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -5%;
+        left: -5%;
+        height: 0;
+        width: 0;
+        background: linear-gradient(315deg, #ffbc00, #ff0058);
+        z-index: -1;
+        transition: all 0.5s;
+    }
+
+    &:hover {
+
+        p,
+        h2 {
+            color: white;
+        }
+
+        &::after {
+            width: 150%;
+            height: 150%;
+            border-top-right-radius: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .ProjectCard {
+        cursor: pointer;
+    }
+}

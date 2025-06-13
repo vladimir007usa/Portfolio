@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="https://i.ibb.co/bFB9XFh/Portfolio.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sayantan Sarkar</title>
+  <meta name="description" content="Personal website of Sayantan Sarkar">
+  <meta property="og:title" content="Sayantan Sarkar" />
+  <meta property="og:description" content="Personal website of Sayantan Sarkar" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sayantan-sarkar.vercel.app" />
+  <meta property="og:image"
+    content="https://i.ibb.co/bFB9XFh/Portfolio.png" />
+  <link rel="apple-touch-icon"
+    href="https://i.ibb.co/bFB9XFh/Portfolio.png" />
+    <link rel="preload" href="https://drive.google.com/thumbnail?id=1uXbNrQKG1WwshK7kQ4B9KK1O327xECl_&sz=w1000" as="image">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="preloader">
+    <span class="loader"></span>
+  </div>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script>
+    window.addEventListener('load', ()=> {
+      console.log('All content loaded.')
+      setTimeout(()=> {
+        document.querySelector('.preloader').style.display = 'none'
+      },500)
+    })
+  </script>
+</body>
+
+</html>

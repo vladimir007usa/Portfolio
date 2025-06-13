@@ -1,0 +1,40 @@
+.Projects {
+    h1 {
+        color: #0c0b14;
+        font-size: 15vw;
+        font-weight: 500;
+        margin-left: 50px;
+        // background: url("https://i.ibb.co/mhmMY90/thumbnail-id-1p9-J76-Qj47-Su-GIXgs08yr-Lv-LYDGl-Fb4gk-sz-w1000.gif");
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -moz-background-clip: text;
+        color: black;
+    }
+
+    .projects-container {
+        height: 100%;
+        padding-inline: 50px;        
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, min(365px));
+        grid-template-rows: auto;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .Projects {
+        h1 {
+            margin-left: 15px;
+            font-weight: 900;
+            margin-block: 20px;
+        }
+
+        .projects-container {
+            padding-inline: 0;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.Skills {
+    box-sizing: border-box;
+
+    >h1 {
+        color: #0c0b14;
+        text-transform: uppercase;
+        font-size: 15vw;
+        margin-left: 50px;
+        font-weight: 500;
+        // background: url("https://i.ibb.co/mhmMY90/thumbnail-id-1p9-J76-Qj47-Su-GIXgs08yr-Lv-LYDGl-Fb4gk-sz-w1000.gif");
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -moz-background-clip: text;
+        color: black;
+    }
+
+    .skill-container {
+        min-height: fit-content;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        padding-inline: 50px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, min(200px));
+        grid-template-rows: auto;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+        margin-bottom: 100px;
+
+        img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+    .Skills {
+        h1 {
+            margin-left: 15px;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        .skill-container {
+            grid-template-columns: repeat(auto-fit, min(150px));
+            img {
+                width: 150px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .Skills {
+
+        .skill-container {
+            padding-inline: 15px;
+        }
+    }
+}

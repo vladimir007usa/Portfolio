@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.About-h1 {
+    >h1 {
+        color: #0c0b14;
+        position: absolute;
+        font-size: 15vw;
+        font-weight: 500;
+        margin-left: 50px;
+        // background: url("https://i.ibb.co/mhmMY90/thumbnail-id-1p9-J76-Qj47-Su-GIXgs08yr-Lv-LYDGl-Fb4gk-sz-w1000.gif");
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -moz-background-clip: text;
+        color: black;
+    }
+
+    .About {
+        min-height: 20vh;
+        background: #0c0b14;
+        padding-inline: 50px;
+        padding-bottom: 50px;
+
+        h1,em,h3,span {
+            font-family: "Poppins", sans-serif;
+            // text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            padding-block: 20px;
+            font-weight: 400;
+            font-size: 40px;
+
+            em {
+                color: red;
+                margin-left: 5px;
+            }
+        }
+
+
+        h3 {
+            font-size: 30px;
+            letter-spacing: 1px;
+            margin-block: 20px;
+            font-weight: 300;
+            // text-decoration: underline;
+            list-style: square;
+            span {
+                font-size: 30px;
+            }
+        }
+
+        span {
+            font-size: 24px;
+            letter-spacing: 1px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .paddLow {
+            padding-left: 25px;
+        }
+
+        .paddHigh {
+            padding-left: 50px;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .About-h1 > h1 {
+        margin-left: 15px;
+        font-weight: 900;
+    }
+
+    .About {
+        // border: 1px solid red;
+        padding-inline: 15px !important;
+    }
+
+    .About .paddLow {
+        padding-left: 25px;
+    }
+
+    .About .paddHigh {
+        padding-left: 25px;
+    }
+
+}

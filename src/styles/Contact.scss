@@ -1,0 +1,105 @@
+svg {
+    display: block;
+}
+
+.contact-cotainer {
+    height: fit-content;
+    background: #0c0b14;
+    padding-left: 50px;
+
+    h1 {
+        font-size: 15vw;
+        font-weight: 500;
+        // background: url("https://i.ibb.co/3FkWBNc/9lZ7.gif");
+        // color: transparent;
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -moz-background-clip: text;
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        p {
+            margin-bottom: 16px;
+            font-size: 20px;
+        }
+
+        >a {
+            text-transform: lowercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            padding: 4px 15px;
+            border: 1px solid white;
+            border-radius: 20px;
+            cursor: none;
+            transition: all 0.3s;
+
+            svg {
+                font-size: 25px;
+                margin-left: 20px;
+                transform: rotate(-30deg);
+                transition: transform 0.3s;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+
+                svg {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+
+        .links {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 35px;
+            width: 239.5px;
+
+            a {
+                cursor: none;
+                svg {
+                    font-size: 30px;
+                    transition: transform 0.2s;
+
+                    &:hover {
+                        transform: scale(1.5);
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .contact-cotainer {
+        padding: 15px;
+        h1 {
+            margin-bottom: 20px;
+        }
+    }
+}
+@media screen and (max-width: 601px) {
+    .contact-cotainer {
+        .contact-details {
+            a {
+                cursor: pointer;
+            }
+            .links {
+                a {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
