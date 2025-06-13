@@ -41,9 +41,9 @@ const Header = () => {
       <header ref={headerDiv}>        
         <div className="logo item">Portfolio.</div>
         <div className="links">
-          <a href="https://twitter.com/imSyntn" target='blank' className="item"><FaXTwitter style={{ fill: 'white' }} /></a>
-          <a href="https://github.com/imSyntn" target='blank' className="item"><BsGithub style={{ fill: 'white' }} /></a>
-          <a href="https://www.linkedin.com/in/sayantan-sarkar-5a49062b0/" target='blank' className="item"><BsLinkedin /></a>
+          {/* <a href="https://twitter.com/imSyntn" target='blank' className="item"><FaXTwitter style={{ fill: 'white' }} /></a> */}
+          <a href="https://github.com/vladimir007usa" target='blank' className="item"><BsGithub style={{ fill: 'white' }} /></a>
+          {/* <a href="https://www.linkedin.com/in/sayantan-sarkar-5a49062b0/" target='blank' className="item"><BsLinkedin /></a> */}
         </div>
       </header>
       <div className="blank_div"></div>
